@@ -23,7 +23,7 @@ type User struct {
 func fetchPaginatedData(baseURL, token string) ([]User, error) {
 	var allUsers []User
 	page := 1
-
+	fmt.Println("ASD")
 	for {
 		url := fmt.Sprintf("%s&page=%d", baseURL, page)
 		users, err := fetchGitHubData(url, token)
